@@ -1,0 +1,30 @@
+.user-header-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+/* small */
+@media screen and (max-width: 480px) {
+}
+
+/* medium */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+/* large */
+@media (min-width: 1025px) {
+  .user-header-logo {
+    margin-top: 4%;
+  }
+
+  .user-header-ul {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
