@@ -1,6 +1,6 @@
 import classes from "./Title.module.css";
 
-const Title = ({ children }) => {
-  return <h2>{children}</h2>;
+const Title = ({ children, className }) => {
+  return <h2 className={`${classes.title} ${className}`}>{children}</h2>;
 };
 export default Title;

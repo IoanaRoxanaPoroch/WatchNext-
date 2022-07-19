@@ -6,9 +6,15 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--black);
 }
 
 :root {
   --white: #fff;
   --black: #010103;
+  --pink: #f5044c;
+}
+
+a {
+  text-decoration: none;
 }

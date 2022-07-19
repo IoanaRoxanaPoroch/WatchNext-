@@ -2,10 +2,21 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
-  color: var(--white);
   text-align: center;
   align-items: center;
   margin-top: 0;
+}
+
+.user-header-ul a {
+  color: var(--white);
+}
+
+.user-header-ul a:hover,
+.user-header-ul a:active,
+.user-header-ul a .active {
+  color: var(--white);
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--white);
 }
 
 /* small */

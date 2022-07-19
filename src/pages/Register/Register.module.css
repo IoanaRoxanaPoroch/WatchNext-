@@ -1,0 +1,39 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #9c9b9b;
+  align-items: center;
+}
+
+.register-form label,
+.register-form input {
+  display: block;
+}
+
+.register-login-link {
+  color: #9c9b9b;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #9c9b9b;
+}
+
+/* small */
+@media screen and (max-width: 480px) {
+}
+
+/* medium */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+/* large */
+@media (min-width: 1025px) {
+  .register-logo {
+    margin: 6rem auto;
+  }
+
+  .register-text {
+    font-size: 14px;
+    line-height: 80px;
+  }
+}

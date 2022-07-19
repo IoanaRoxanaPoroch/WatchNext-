@@ -1,7 +1,6 @@
 import classes from "./Button.module.css";
 
-const Button = () => {
-  //type
-  return <button></button>;
+const Button = ({ type, children }) => {
+  return <button className={`${classes[type]}`}>{children}</button>;
 };
 export default Button;

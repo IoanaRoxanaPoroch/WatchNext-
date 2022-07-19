@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import { pink } from "@mui/material/colors";
 import { createTheme } from "@mui/material";
 import SvgIcon from "@mui/material/SvgIcon";
@@ -28,7 +30,7 @@ const Footer = () => {
   const theme = createTheme();
 
   return (
-    <div className={classes.footer}>
+    <footer className={classes.footer}>
       <div className={classes["footer-infos"]}>
         <Logo className={classes["footer-logo"]} />
 
@@ -41,7 +43,14 @@ const Footer = () => {
 
           <li>Contact Us</li>
 
-          <li>Register</li>
+          <li>
+            <NavLink
+              to="/register"
+              className={(navData) => (navData.active ? classes.active : "")}
+            >
+              Register
+            </NavLink>
+          </li>
 
           <li>News</li>
 
@@ -65,7 +74,7 @@ const Footer = () => {
           <YouTubeIcon sx={{ margin: theme.spacing(2) }} />
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 export default Footer;

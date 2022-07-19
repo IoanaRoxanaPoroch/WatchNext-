@@ -35,6 +35,18 @@
   align-items: center;
 }
 
+.footer a {
+  color: var(--white);
+}
+
+.footer a:hover,
+.footer a:active,
+.footer a .active {
+  color: var(--white);
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--white);
+}
+
 /* small */
 @media screen and (max-width: 480px) {
 }
